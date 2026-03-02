@@ -27,16 +27,10 @@ cd Pygame_demo
 
 2. 模型训练
 
-# 无渲染训练（推荐，速度更快）
-python train.py
 
 # 可视化训练（查看游戏画面）
-python train.py --render True
+python fly_Q-Learning.py --render True
 
-3. 模型测试
-
-# 加载训练好的模型，可视化运行
-python test.py
 
 关键超参数
 
@@ -101,10 +95,8 @@ python test.py
 项目结构
 
 Pygame_demo/
-├── game_env.py    # 游戏环境核心（玩家/敌人/子弹逻辑）
-├── dqn_agent.py   # DQN智能体（网络结构+训练逻辑）
-├── train.py       # 训练脚本（无渲染/可视化切换）
-├── test.py        # 测试脚本（加载模型运行）
+├── fly.py    # 游戏环境核心（玩家/敌人/子弹逻辑）
+├── fly_Q-Learning.py      # 训练脚本（无渲染）
 ├── assets/        # 图片/音效素材（可选）
 └── README.md      # 项目说明文档
 
